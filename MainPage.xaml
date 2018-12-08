@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:hackathonapp"
+             x:Class="hackathonapp.MainPage">
+
+    <Grid BackgroundColor="DarkCyan">
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="welcome_label" TextColor="Beige" Text="Athlete look-alike!" VerticalOptions="Center" Grid.Row="0" FontSize="Large" HorizontalTextAlignment="Center" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="my_photo" HeightRequest="200" WidthRequest="200" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image x:Name="athlete_photo" HeightRequest="200" WidthRequest="200" Grid.Column="1" HorizontalOptions="Center" Source="http://www.evolvefish.com/assets/images/vinyl%20decals/EF-VDC-00035(black).jpg"/>
+        </Grid>
+        <Button x:Name="photo_but" Grid.Row="2" HorizontalOptions="Center" FontSize="32" Text="Take Photo!" BorderRadius="50" BorderWidth="1" BorderColor="Black" BackgroundColor="Accent" TextColor="Beige" Clicked="Photo_but_Clicked" VerticalOptions="Center" />
+        <Button x:Name="analyze_but" Grid.Row="3" HorizontalOptions="Center" FontSize="32" Text="Analyze!" BorderRadius="50" BorderWidth="1" BorderColor="Black" BackgroundColor="Accent" TextColor="Beige" Clicked="Analyze_but_Clicked"  VerticalOptions="Center" />
+
+    </Grid>
+
+
+</ContentPage>
